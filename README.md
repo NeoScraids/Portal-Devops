@@ -25,15 +25,17 @@ Este portal es una aplicación web que permite:
 - Acceder a widgets y componentes reutilizables para monitoreo.
 - Facilitar la integración con otros sistemas DevOps.
 
+El objetivo es ofrecer una herramienta centralizada y flexible para la operación y soporte de infraestructuras tecnológicas, permitiendo a los equipos actuar de manera proactiva ante incidentes y optimizar la gestión de sus servicios.
+
 ---
 
 ## Características principales
 
 - **Gestión de alertas:** Visualización clara de alertas activas, reconocidas y resueltas.
-- **Configuración flexible:** Personaliza los tipos de alertas y notificaciones.
-- **Componentes reutilizables:** Widgets y utilidades para extender el portal según tus necesidades.
+- **Configuración flexible:** Personaliza los tipos de alertas y notificaciones según tus necesidades.
+- **Componentes reutilizables:** Widgets y utilidades para extender el portal y adaptarlo a distintos escenarios.
 - **Diseño responsivo:** Interfaz moderna y adaptable a cualquier dispositivo.
-- **Integración sencilla:** Preparado para integrarse con APIs y servicios externos.
+- **Integración sencilla:** Preparado para integrarse con APIs y servicios externos de monitoreo o gestión.
 
 ---
 
@@ -64,7 +66,7 @@ Este portal es una aplicación web que permite:
 
 1. **Clona el repositorio:**
    ```sh
-   git clone https://github.com/tu-usuario/portal-devops.git
+   git clone https://github.com/NeoScraids/portal-devops.git
    cd portal-devops
    ```
 
