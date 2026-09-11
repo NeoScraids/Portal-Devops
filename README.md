@@ -1,112 +1,104 @@
-# Portal DevOps
+<div align="center">
 
-Bienvenido al **Portal DevOps**, una plataforma diseñada para la gestión, monitoreo y visualización de alertas y componentes relacionados con la operación de sistemas y servicios. Este portal está guiado para equipos de desarrollo, operaciones y soporte técnico que buscan centralizar la información relevante de sus sistemas y facilitar la toma de decisiones.
+  <h1>Portal-Devops</h1>
+  <p><strong>Centralized DevOps Operational Portal & Observability Dashboard</strong></p>
 
----
+  <p>
+    <img src="https://img.shields.io/badge/Framework-Next.js_14-black?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/Library-React_18-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+    <img src="https://img.shields.io/badge/Language-TypeScript_5-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Styling-TailwindCSS_3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="TailwindCSS" />
+    <img src="https://img.shields.io/badge/UI_Primitives-Radix_UI-161618?style=flat-square&logo=radix-ui&logoColor=white" alt="Radix UI" />
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="License" />
+  </p>
 
-## Tabla de Contenidos
-
-- [¿Qué es este portal?](#qué-es-este-portal)
-- [Características principales](#características-principales)
-- [Estructura del proyecto](#estructura-del-proyecto)
-- [Instalación y configuración](#instalación-y-configuración)
-- [Comandos útiles](#comandos-útiles)
-- [Contribuir](#contribuir)
-- [Licencia](#licencia)
-
----
-
-## ¿Qué es este portal?
-
-Este portal es una aplicación web que permite:
-
-- Visualizar alertas del sistema en tiempo real.
-- Configurar y personalizar notificaciones.
-- Acceder a widgets y componentes reutilizables para monitoreo.
-- Facilitar la integración con otros sistemas DevOps.
-
-El objetivo es ofrecer una herramienta centralizada y flexible para la operación y soporte de infraestructuras tecnológicas, permitiendo a los equipos actuar de manera proactiva ante incidentes y optimizar la gestión de sus servicios.
+</div>
 
 ---
 
-## Características principales
+### Overview
 
-- **Gestión de alertas:** Visualización clara de alertas activas, reconocidas y resueltas.
-- **Configuración flexible:** Personaliza los tipos de alertas y notificaciones según tus necesidades.
-- **Componentes reutilizables:** Widgets y utilidades para extender el portal y adaptarlo a distintos escenarios.
-- **Diseño responsivo:** Interfaz moderna y adaptable a cualquier dispositivo.
-- **Integración sencilla:** Preparado para integrarse con APIs y servicios externos de monitoreo o gestión.
+`Portal-Devops` is an enterprise-oriented internal developer portal (IDP) designed to aggregate real-time infrastructure metrics, streamline deployments, monitor services, and provide self-service tooling for engineering teams.
+
+Built with modern web standards, it bridges the gap between infrastructure operations and developer workflows through an intuitive, high-performance interface.
 
 ---
 
-## Estructura del proyecto
+### Key Capabilities
 
+- **Infrastructure Telemetry & Metrics:** Visualizes cluster health, CPU/Memory resource consumption, and network throughput via Recharts.
+- **Service Catalog & Health Tracking:** Centralized directory of microservices with live availability indicators, latency checks, and incident status.
+- **Self-Service Operational Actions:** Controlled triggers for deployment pipelines, log inspection, and cache purges.
+- **Modular Design System:** Built with Radix UI headless components, accessible dialogs, dropdowns, and Tailwind CSS theming.
+- **Micro-Interactions & Fluidity:** Animated transitions powered by Framer Motion.
+
+---
+
+### Technology Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Framework** | Next.js 14 (App Router Architecture) |
+| **Core Language** | TypeScript 5 (Strict Type Checking) |
+| **UI Components** | Radix UI primitives (`@radix-ui/react-*`) |
+| **Styling** | Tailwind CSS 3 with `tailwind-merge` & `clsx` |
+| **Data Visualization** | Recharts & Lucide React Icons |
+| **Animation Engine** | Framer Motion 11 |
+
+---
+
+### Repository Layout
+
+```text
+Portal-Devops/
+├── app/                  # Next.js App Router pages and layouts
+├── components/           # Reusable UI widgets, charts, and navigation bars
+├── hooks/                # Custom React hooks (telemetry, state)
+├── lib/                  # Utilities, formatters, and API client helpers
+├── types/                # TypeScript interface and type definitions
+├── public/               # Static assets and brand logos
+├── next.config.js        # Next.js build and runtime configuration
+├── tailwind.config.js    # Design system tokens and styling extensions
+├── tsconfig.json         # TypeScript compiler configuration
+└── README.md
 ```
-├── app/                # Páginas, layouts y componentes principales
-│   ├── components/     # Componentes reutilizables de UI
-│   ├── widgets/        # Widgets específicos para monitoreo y alertas
-│   ├── test/           # Pruebas de componentes y páginas
-│   ├── globals.css     # Estilos globales
-│   ├── layout.tsx      # Layout principal de la app
-│   └── page.tsx        # Página principal
-├── hooks/              # Custom React hooks (ej: useData)
-├── lib/                # Funciones y utilidades compartidas
-├── types/              # Definiciones de tipos TypeScript
-├── public/             # Archivos estáticos
-├── .next/              # Archivos generados por Next.js (build)
-├── package.json        # Dependencias y scripts del proyecto
-├── tailwind.config.js  # Configuración de TailwindCSS
-├── tsconfig.json       # Configuración de TypeScript
-└── README.md           # Este archivo
+
+---
+
+### Getting Started
+
+#### Prerequisites
+- Node.js (`>= 18.17.0`)
+- npm or pnpm package manager
+
+#### Installation & Development
+
+```bash
+# Clone the repository
+git clone https://github.com/NeoScraids/Portal-Devops.git
+cd Portal-Devops
+
+# Install dependencies
+npm install
+
+# Run the local development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to inspect the portal.
+
+#### Production Build
+
+```bash
+# Compile and optimize production bundle
+npm run build
+
+# Start production server
+npm run start
 ```
 
 ---
 
-## Instalación y configuración
+### License
 
-1. **Clona el repositorio:**
-   ```sh
-   git clone https://github.com/NeoScraids/portal-devops.git
-   cd portal-devops
-   ```
-
-2. **Instala las dependencias:**
-   ```sh
-   npm install
-   ```
-
-3. **Configura las variables de entorno:**
-   - Crea un archivo `.env.local` si es necesario y agrega tus variables de entorno.
-
-4. **Ejecuta el proyecto en desarrollo:**
-   ```sh
-   npm run dev
-   ```
-   El portal estará disponible en [http://localhost:3000](http://localhost:3000).
-
----
-
-## Comandos útiles
-
-- `npm run dev` – Inicia el servidor de desarrollo.
-- `npm run build` – Genera la build de producción.
-- `npm run start` – Inicia el servidor en modo producción.
-- `npm run lint` – Ejecuta el linter para mantener la calidad del código.
-- `npm run test` – Ejecuta las pruebas unitarias.
-
----
-
-## Contribuir
-
-¡Las contribuciones son bienvenidas! Por favor, abre un issue o pull request para sugerir mejoras, reportar bugs o proponer nuevas funcionalidades.
-
----
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
-
----
-
-**¿Dudas o sugerencias?**  
-No dudes en abrir un issue o contactar a los administradores del repositorio.
+Distributed under the MIT License. Developed and maintained by [Brandon Mendieta](https://github.com/NeoScraids).
