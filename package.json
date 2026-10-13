@@ -43,6 +43,6 @@
     "typescript": "^5.0.0"
   },
   "keywords": ["devops", "dashboard", "monitoring", "infrastructure"],
-  "author": "DevOps Team",
+  "author": "Brandon Mendieta",
   "license": "MIT"
 }
